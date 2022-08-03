@@ -21,7 +21,7 @@ public class MathHandler {
             case '-':
                 result = subtract(operand1, operand2);
                 break;
-            case '*':
+            case 'x':
                 result = multiply(operand1, operand2);
                 break;
             case '÷':
@@ -42,7 +42,7 @@ public class MathHandler {
             case '-':
                 result = subtract(operand1, operand2);
                 break;
-            case '*':
+            case 'x':
                 result = multiply(operand1, operand2);
                 break;
             case '÷':
@@ -93,7 +93,6 @@ public class MathHandler {
         return 0.0;
     }
 
-    // Note: '*' method already polymorphic
     public static int multiply(int operand1, int operand2) {
         /* YOUR CODE HERE */
         return 0;
