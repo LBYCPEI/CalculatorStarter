@@ -1,0 +1,92 @@
+@startuml
+
+title __Example Calculator Class Diagram__\n
+
+
+    class CalculatorLayout {
+        {static} - MAIN_FONT : String
+        {static} - MARGIN : int
+        {static} - MEMO_FONT : String
+        {static} - NCOLS : int
+        {static} - NROWS : int
+        {static} - labels : char[]
+        - mainDisplay : GLabel
+        - memoBuffer : StringBuilder
+        - memoDisplay : GLabel
+        - numBuffer : StringBuilder
+        + CalculatorLayout()
+        + clearMainDisplay()
+        + clearMemoBuffer()
+        + clearMemoDisplay()
+        + clearMemoElement()
+        + clearNumBuffer()
+        + deleteOneCharacter()
+        + getMainDisplay()
+        + negateElement()
+        + setMainDisplay()
+        + setMainDisplay()
+        + setMemoDisplay()
+        + setMemoDisplay()
+    }
+
+
+
+    class Calculator {
+        {static} - CANVAS_HEIGHT : double
+        {static} - CANVAS_WIDTH : double
+        - isDecimal : boolean
+        - isDeletable : boolean
+        - isFirstOp : boolean
+        - isFirstPoint : boolean
+        - isPriorEquals : boolean
+        - opBuffer : char
+        - operand1 : double
+        - operand2 : double
+        {static} + main()
+        + mouseClicked()
+        + run()
+        - isOperator()
+    }
+
+
+    class MathHandler {
+        {static} + add()
+        {static} + add()
+        {static} + divide()
+        {static} + divide()
+        {static} + evaluate()
+        {static} + evaluate()
+        {static} + multiply()
+        {static} + multiply()
+        {static} + subtract()
+        {static} + subtract()
+    }
+
+    class MyButton {
+        {static} - FONT : String
+        - key : GRect
+        - keyText : GLabel
+        + MyButton()
+        + getText()
+        + setText()
+        - getCenterX()
+        - getCenterY()
+    }
+
+  
+
+  CalculatorLayout -up-|> acm.graphics.GCompound
+  Calculator -up-|> acm.program.GraphicsProgram
+  Calculator o-- CalculatorLayout : buttonLayout
+  Calculator <.. MathHandler : <<use>>
+  CalculatorLayout o--  MyButton: myButton
+  MyButton -up-|> acm.graphics.GCompound
+
+
+right footer
+
+
+mkc
+endfooter
+
+@enduml
