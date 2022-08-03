@@ -3,8 +3,8 @@
  * ---------------------
  * This class is the main class for a sample calculator app implementation
  *  Author: Cobalt mkc
- *  Date modified: July 22, 2019
- *
+ *  Date created: July 22, 2019
+ *  Last modified: Aug 3, 2022
  */
 
 
