@@ -41,6 +41,8 @@ public class App extends GraphicsProgram {
 
 
     public void mouseClicked(MouseEvent e) {
+        // This method enables you to access the mouse
+        
         GObject element = calculatorLayout.getElementAt(e.getX(), e.getY());
         // getElementAt() Returns the topmost graphical object that contains the point (x, y), or null if no such object exists.
         
