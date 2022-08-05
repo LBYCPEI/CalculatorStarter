@@ -20,23 +20,28 @@ public class MyButton extends GCompound {
     private GLabel keyText;
 
     public MyButton(double x, double y, double width, double height, String text) {
+        // This method draws the Button object which is composed of GRect and GLabel objects
         /* YOUR CODE HERE */
     }
 
     public String getText() {
+        // This method returns the text associated with the button
         /* YOUR CODE HERE */
         return "";
     }
 
     private double getCenterX(double width, double labelWidth) {
+        // No need to modify this method
         return (width - labelWidth) / 2.0f;
     }
 
     private double getCenterY(double height, double ascent) {
+        // No need to modify this method
         return (ascent + (height - ascent) / 2.0f);
     }
 
     public void setText(String text) {
+        // This method modifies the keyText of the button
         /* YOUR CODE HERE */
     }
 }
