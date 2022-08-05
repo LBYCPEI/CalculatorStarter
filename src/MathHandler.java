@@ -1,5 +1,5 @@
 /*
- * File: MathHandler.java
+ * File: MathHandler.java   (!!! TO BE MODIFIED !!! In the   YOUR CODE HERE   parts)
  * ---------------------
  *  This class is a helper class for a sample calculator app implementation
  *  Author: Cobalt mkc
@@ -13,6 +13,7 @@
 public class MathHandler {
 
     public static int evaluate(int operand1, int operand2, char operator) {
+        // No modifications needed here!!!
         int result;
         switch (operator) {
             case '+':
@@ -34,6 +35,7 @@ public class MathHandler {
     }
 
     public static double evaluate(double operand1, double operand2, char operator) {
+        // No modifications needed here!!!
         double result;
         switch (operator) {
             case '+':
@@ -99,7 +101,8 @@ public class MathHandler {
     }
 
     public static double multiply(double operand1, double operand2) {
-        return operand1 * operand2;
+        /* YOUR CODE HERE */
+        return 0.0;
     }
 
 }
