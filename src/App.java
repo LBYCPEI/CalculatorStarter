@@ -1,5 +1,5 @@
 /*
- * File: Calculator.java (No need to modify this file, but you may opt to optimize this class.)
+ * File: Calculator.java (Find and solve bugs if they exist.)
  * ---------------------
  * This class is the main class for a sample calculator app implementation
  *  Author: Cobalt mkc
