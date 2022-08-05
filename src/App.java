@@ -41,14 +41,17 @@ public class App extends GraphicsProgram {
 
 
     public void mouseClicked(MouseEvent e) {
-        // This method enables you to access the mouse
+        // This method runs everytime you click the mouse, thus it enables you to access the mouse events
+       
         
         GObject element = calculatorLayout.getElementAt(e.getX(), e.getY());
         // getElementAt() Returns the topmost graphical object that contains the point (x, y), or null if no such object exists.
+        // Documentation : https://cs.stanford.edu/people/eroberts/jtf/javadoc/complete/acm/program/GraphicsProgram.html
         
         if (element instanceof MyButton) {
             String input = ((MyButton) element).getText();    // Gets the text associated with the button. e.g. C, CE, ⌫, ±, 0, 1,...,9, etc.
-
+             // e.g. input = 0  
+            
             // I. Handle special cases: Clear Element, Clear All, and  Delete
             if (input.equals("CE ")) {
                 calculatorLayout.clearMainDisplay();
@@ -63,7 +66,7 @@ public class App extends GraphicsProgram {
                 System.out.println("Clear Called");
                 return;
             }
-            if (input.equals("⌫") && isDeletable) {
+            if (input.equals("⌫") && isDeletable) {   // ⌫ symbolizes delete
                 calculatorLayout.deleteOneCharacter();
                 System.out.println("Delete Called");
                 return;
@@ -71,7 +74,7 @@ public class App extends GraphicsProgram {
 
             // II. Handle arithmetic symbols and operations
 
-            char symbol = input.charAt(0);
+            char symbol = input.charAt(0); // Aiming for 0,1,2,3,4,5,6,7,8,9,.,±,=,+,-,x,÷
 
             if (symbol == '±' && isDeletable) {
                 calculatorLayout.negateElement(opBuffer);
