@@ -15,16 +15,16 @@ import java.awt.event.MouseEvent;
 
 public class App extends GraphicsProgram {
 
-    private static final double CANVAS_WIDTH = 540;
-    private static final double CANVAS_HEIGHT = 740;
-    private CalculatorLayout calculatorLayout;
+    private static final double CANVAS_WIDTH = 540;    // Calculator width
+    private static final double CANVAS_HEIGHT = 740;   // Calculator height
+    private CalculatorLayout calculatorLayout;         // Instantiate the Layout Object
 
-    private char opBuffer;
-    private double operand1;
-    private String result;
-
-    private boolean isFirstOp;
-    private boolean isPriorEquals;
+    private char opBuffer;                             // Stores the operator
+    private double operand1;                           // Stores the operand digits
+    private String result;                             // Stores the results
+ 
+    private boolean isFirstOp;                         // Checks if first operator
+    private boolean isPriorEquals;                     // Checks if  
     private boolean isFirstPoint;
     private boolean isDeletable;
 
