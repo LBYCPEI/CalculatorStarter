@@ -31,12 +31,12 @@ public class MyButton extends GCompound {
     }
 
     private double getCenterX(double width, double labelWidth) {
-        // No need to modify this method
+        // No need to modify this method (Not utilized currently)
         return (width - labelWidth) / 2.0f;
     }
 
     private double getCenterY(double height, double ascent) {
-        // No need to modify this method
+        // No need to modify this method (Not utilized currently)
         return (ascent + (height - ascent) / 2.0f);
     }
 
