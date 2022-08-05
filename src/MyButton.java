@@ -8,9 +8,9 @@
  */
 
 
-import acm.graphics.GCompound;
-import acm.graphics.GLabel;
-import acm.graphics.GRect;
+import acm.graphics.GCompound;  // https://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/graphics/GCompound.html 
+import acm.graphics.GLabel;     // https://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/graphics/GLabel.html 
+import acm.graphics.GRect;      // https://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/graphics/GRect.html
 
 
 public class MyButton extends GCompound {
