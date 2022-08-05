@@ -24,9 +24,9 @@ public class App extends GraphicsProgram {
     private String result;                             // Stores the results
  
     private boolean isFirstOp;                         // Checks if first operator
-    private boolean isPriorEquals;                     // Checks if  
-    private boolean isFirstPoint;
-    private boolean isDeletable;
+    private boolean isPriorEquals;                     // Checks if it is prior to equal sign 
+    private boolean isFirstPoint;                      // Checks if first decimal point
+    private boolean isDeletable;                       // Checks if it is deletable
 
 
     public void run() {
@@ -35,14 +35,17 @@ public class App extends GraphicsProgram {
         calculatorLayout = new CalculatorLayout(getHeight());
         add(calculatorLayout);
         initBooleans();
-        addMouseListeners();
+        addMouseListeners();                             // Adds the program as both a MouseListener and MouseMotionListener to the canvas.
+                                                         //  (Refer to: https://cs.stanford.edu/people/eroberts/jtf/javadoc/complete/acm/program/GraphicsProgram.html)
     }
 
 
     public void mouseClicked(MouseEvent e) {
         GObject element = calculatorLayout.getElementAt(e.getX(), e.getY());
+        // getElementAt() Returns the topmost graphical object that contains the point (x, y), or null if no such object exists.
+        
         if (element instanceof MyButton) {
-            String input = ((MyButton) element).getText();
+            String input = ((MyButton) element).getText();    // Gets the text associated with the button. e.g. C, CE, ⌫, ±, 0, 1,...,9, etc.
 
             // I. Handle special cases: Clear Element, Clear All, and  Delete
             if (input.equals("CE ")) {
