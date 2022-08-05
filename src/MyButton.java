@@ -16,8 +16,8 @@ import acm.graphics.GRect;      // https://cs.stanford.edu/people/eroberts/jtf/j
 public class MyButton extends GCompound {
 
     private static final String FONT = "SansSerif-bold-64";
-    private GRect key;
-    private GLabel keyText;
+    private GRect key;           // https://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/graphics/GRect.html
+    private GLabel keyText;      // https://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/graphics/GLabel.html 
 
     public MyButton(double x, double y, double width, double height, String text) {
         // This method draws the Button object which is composed of GRect and GLabel objects
