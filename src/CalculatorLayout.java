@@ -4,7 +4,7 @@
  *  This class is the layout class for a sample calculator app implementation
  *  Author: Cobalt mkc
  *  Date modified: July 22, 2019
- *
+ *  Last Modified: Aug 5, 2022
  */
 
 
